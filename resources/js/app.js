@@ -1,7 +1,5 @@
 require('./bootstrap');
-require("https://npmcdn.com/flatpickr/dist/flatpickr.min.js");
-require("https://npmcdn.com/flatpickr/dist/l10n/ja.js")
-
+require('./script');
 import Alpine from 'alpinejs';
 
 window.Alpine = Alpine;

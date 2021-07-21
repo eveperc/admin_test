@@ -2232,11 +2232,6 @@ select {
 		grid-column: span 1 / span 1;
 	}
 
-	.md\:mx-auto {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	.md\:mt-0 {
 		margin-top: 0px;
 	}

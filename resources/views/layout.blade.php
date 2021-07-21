@@ -8,5 +8,6 @@
 <main>
 @yield('content')
 </main>
-@yield('scripts')
+
 </x-app-layout>
+@yield('scripts')
