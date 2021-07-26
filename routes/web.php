@@ -37,8 +37,8 @@ Route::group(['middleware' => 'auth:'.'admins','verified'],function (){
    * @method GET
    * @method POST
    */
-    Route::get('/admin/folders/{id}/tasks/{tasks_id}/edit', [TaskController::class, 'showEditForm'])->name('tasks.edit');
-    Route::post('/admin/folders/{id}/tasks/{tasks_id}/edit',[TaskController::class,'edit']);
+    Route::get('/admin/folders/{id}/tasks/{task_id}/edit', [TaskController::class, 'showEditForm'])->name('tasks.edit');
+    Route::post('/admin/folders/{id}/tasks/{task_id}/edit',[TaskController::class,'edit']);
   });
 /**
  * ルーティング（管理者・法人・利用者）

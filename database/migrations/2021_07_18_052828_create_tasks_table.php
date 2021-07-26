@@ -16,6 +16,7 @@ class CreateTasksTable extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('folder_id')->unsigned();
+            $table->integer('company_id')->unsigned();
             $table->string('title',100);
             $table->date('due_date');
             $table->integer('status')->default(1);
@@ -23,6 +24,7 @@ class CreateTasksTable extends Migration
 
             //外部キー設定する
             $table->foreign('folder_id')->references('id')->on('folders');
+            $table->foreign('company_id')->references('id')->on('companies');
         });
     }
 
